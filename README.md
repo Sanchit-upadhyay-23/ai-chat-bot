@@ -1,6 +1,6 @@
 # AI Chatbot: Resume-Based Q&A
 
-Ask questions like “What is my CGPA?” from a resume PDF using local LLMs.
+Ask questions like “What is my Name ?” from a resume PDF using local LLMs.
 
 ## ⚙️ Tech Stack
 git add README.md
