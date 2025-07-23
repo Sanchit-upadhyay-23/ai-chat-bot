@@ -1,8 +1,9 @@
-# 🧠 AI Chatbot: Resume-Based Q&A
+# AI Chatbot: Resume-Based Q&A
 
 Ask questions like “What is my CGPA?” from a resume PDF using local LLMs.
 
 ## ⚙️ Tech Stack
+git add README.md
 
 - **Backend**: FastAPI
 - **Frontend**: Streamlit
@@ -10,7 +11,7 @@ Ask questions like “What is my CGPA?” from a resume PDF using local LLMs.
 - **Vector Store**: ChromaDB
 - **LLM**: LLaMA 3 via Ollama
 
-## 🚀 Setup
+##  Setup
 
 ```bash
 # 1. Clone the repo
@@ -26,8 +27,17 @@ pip install -r requirements.txt
 # 4. Pull the model
 ollama pull llama3:8b-instruct-q4_K_M
 
-# 5. Start the backend
-uvicorn backend.main:app --reload
 
-# 6. Start the frontend
-streamlit run frontend/app.py
+# How to Run the Project
+Start the Ollama server:
+ollama serve
+
+Load a Language Model:
+ollama run zephyr
+
+Start the FastAPI backend: From the project root directory
+uvicorn backend.main:app --reload --port 8000
+
+Start the Streamlit frontend:
+cd frontend
+streamlit run streamlit_app.py
