@@ -1,0 +1,25 @@
+# Core backend + API
+fastapi
+uvicorn
+
+# Frontend
+streamlit
+requests
+
+# PDF handling
+PyMuPDF
+
+# Embeddings + Retrieval
+sentence-transformers
+chromadb
+torch  # required for sentence-transformers
+
+# Env config
+python-dotenv
+
+# LangChain + Ollama
+langchain
+langchain-ollama
+
+# Optional: reranker (CrossEncoder)
+scikit-learn
